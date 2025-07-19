@@ -1,4 +1,4 @@
-package Main;
+package ConditionEX; // Comparing Two Numbers
 
 public class Main3 {
     public static void main(String[] args) {

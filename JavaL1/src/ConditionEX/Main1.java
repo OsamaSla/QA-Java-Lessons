@@ -1,4 +1,4 @@
-package Main;
+package ConditionEX; // checking age conditions
 
 public class Main1 {
 	 public static void main(String[] args) {

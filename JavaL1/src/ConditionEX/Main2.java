@@ -1,4 +1,4 @@
-package Main;
+package ConditionEX; // Checking for Even or Odd Numbers
 
 public class Main2 {
     public static void main(String[] args) {
