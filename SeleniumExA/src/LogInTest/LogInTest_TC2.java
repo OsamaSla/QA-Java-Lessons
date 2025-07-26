@@ -16,7 +16,7 @@ public class LogInTest_TC2 {
 		driver.get("https://www.saucedemo.com/");
 
 		// TC2 - Failed login - user name - valid & password - invalid
-		// Login:
+		// Login: T.user, F.user, T.pass, F.pass
 		// insert user name:
 		driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");
 		// insert Password:
