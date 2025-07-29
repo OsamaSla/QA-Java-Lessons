@@ -20,6 +20,7 @@ public class LogInTest_TC2 {
 		// insert user name:
 		driver.findElement(By.cssSelector("#user-name")).sendKeys("standard_user");
 		// insert Password:
+
 		driver.findElement(By.cssSelector("#password")).sendKeys("123456");
 		// click login
 		driver.findElement(By.cssSelector("#login-button")).click();
@@ -32,6 +33,23 @@ public class LogInTest_TC2 {
 			System.out.println("TC 02 -Failed");
 		}
 		driver.quit();
+	}
+
+//login
+	public static void login(WebDriver driver, String userName, String password) {
+		// insert user name:
+		driver.findElement(By.cssSelector("#user-name")).sendKeys("userName");
+
+		// insert Password:
+		driver.findElement(By.cssSelector("#password")).sendKeys("password");
+
+		// click login
+		driver.findElement(By.cssSelector("#login-button")).click();
+	}
+	// Negative Test
+	public static void failedLoginTC(WebDriver driver, String userName, String password, String tcID, String expected) {
+		login(driver, userName, password);
+		String actual = driver.findElement(By.cssSelector(" h3")).getText()
 	}
 
 }
