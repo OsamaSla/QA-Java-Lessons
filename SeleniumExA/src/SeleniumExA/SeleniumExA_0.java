@@ -24,19 +24,3 @@ public class SeleniumExA_0 {
 	}
 
 }
-
-//login
-	public static void login(WebDriver driver, String userName, String password) {
-		// insert user name:
-		driver.findElement(By.cssSelector("#user-name")).sendKeys("userName");
-
-		// insert Password:
-		driver.findElement(By.cssSelector("#password")).sendKeys("password");
-
-		// click login
-		driver.findElement(By.cssSelector("#login-button")).click();
-	}
-	// Negative Test
-	
-
-}
